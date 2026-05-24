@@ -67,6 +67,7 @@ a:hover {
     grid-template-columns: repeat(auto-fit, minmax(300px, 500px));
     gap: 20px;
     padding: 20px;
+    justify-content: center;
 }
 
 .project-card {
