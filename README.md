@@ -1,2 +1,1 @@
-# stormcloudesigns.github.io
-this is my site
+Click on title above to enter website.
