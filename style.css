@@ -57,17 +57,17 @@ a:hover {
 }
 
 .sbutton {
-    display: block;
-    margin-top: 20px;
-    text-align: center;
+  display: block;
+  margin-top: 20px;
+  text-align: center;
 }
 
 .pastwork-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 500px));
-    gap: 20px;
-    padding: 20px;
-    justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 500px));
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
 }
 
 .project-card {
@@ -87,10 +87,45 @@ a:hover {
 }
 
 .hyperlink {
-    text-decoration-line: underline;
-    padding: 0;
-    border-radius: 0;
-    border: none;
-    background-color: transparent;
-    color: none;
+  text-decoration-line: underline;
+  padding: 0;
+  border-radius: 0;
+  border: none;
+  background-color: transparent;
+  color: none;
+}
+
+.services {
+  display: flex;
+  gap: 30px;
+}
+
+.services div {
+  flex: 1;
+}
+
+ul p {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.services img {
+  width: 25%;
+  border: 2px solid black;
+  border-radius: 8px;
+}
+
+.filament {
+  display: flex;
+  gap: 30px;
+}
+
+.filament div{
+  flex: 1;
+}
+
+.filament img {
+  width: 25%;
+  border: 2px solid black;
+  border-radius: 8px;
 }

@@ -1,27 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Stormcloud Designs</title>
+    <title>Stormcloud Designs - Contact Us</title>
     <link rel="icon" type="image/x-icon" href="/images/Modern Ico.ico">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto">
     
   </head>
   <body>
-    <header class="topbar">
-        <img src="images/Modern_Logo.png" alt="Logo" style="width: 100px;">
-        <h1>Stormcloud Designs</h1>
-        <nav class="navbar">
-            <a href="index.html">Home</a>
-            <a href="https://www.etsy.com/shop/StormcloudDesigns1" target="_blank">Etsy</a>
-            <a href="contact.html" >Contact Me</a>
-            <a href="pastwork.html">Past Work</a>
-        </nav>
-    </header>
+    <div id="header"></div>
+    <script>
+      fetch("header.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("header").innerHTML = data;
+      });
+    </script>
     <hr>
     <h1>Contact Us</h1>
     <hr>
+    <a class="sbutton" href="mailto:stormcloudesigns@gmail.com" target="_blank">Email me at @stormcloudesigns@gmail.com! (preferred method)</a>
     <a class="sbutton" href="sms:+17343228132" target="_blank">Message me at (734)-322-8132 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>(Please do not call!)</i></a>
-    <a class="sbutton" href="mailto:stormcloudesigns@gmail.com" target="_blank">Email me at @stormcloudesigns@gmail.com!</a>
   </body>
 </html>

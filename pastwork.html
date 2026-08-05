@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Stormcloud Designs</title>
+    <title>Stormcloud Designs - Past Work</title>
     <link rel="icon" type="image/x-icon" href="/images/Modern Ico.ico">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto">
     
   </head>
   <body>
-    <header class="topbar">
-        <img src="images/Modern_Logo.png" alt="Logo" style="width: 100px;">
-        <h1>Stormcloud Designs</h1>
-        <nav class="navbar">
-            <a href="index.html">Home</a>
-            <a href="https://www.etsy.com/shop/StormcloudDesigns1" target="_blank">Etsy</a>
-            <a href="contact.html" >Contact Me</a>
-            <a href="pastwork.html">Past Work</a>
-        </nav>
-    </header>
+    <div id="header"></div>
+    <script>
+      fetch("header.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("header").innerHTML = data;
+      });
+    </script>
     <hr>
     <h1>Past Work</h1>
     <hr>

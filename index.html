@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Stormcloud Designs</title>
+    <title>Stormcloud Designs - Main</title>
     <link rel="icon" type="image/x-icon" href="/images/Modern Ico.ico">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto">
     
   </head>
   <body>
-    <header class="topbar">
-        <img src="images/Modern_Logo.png" alt="Logo" style="width: 100px;">
-        <h1>Stormcloud Designs</h1>
-        <nav class="navbar">
-            <a href="index.html">Home</a>
-            <a href="https://www.etsy.com/shop/StormcloudDesigns1" target="_blank">Etsy</a>
-            <a href="contact.html" >Contact Me</a>
-            <a href="pastwork.html">Past Work</a>
-        </nav>
-    </header>
+    <div id="header"></div>
+    <script>
+      fetch("header.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("header").innerHTML = data;
+      });
+    </script>
     <hr>
     <div class="banner">
         <h1><b>Welcome!</b> Use the buttons above for navigation or learn more about me below.</h1>
@@ -26,20 +24,6 @@
     <hr>
 
     <div class="aboutsection">
-        <div class="whatwedo">
-            <h2>What Do I Do?</h2>
-            <p>
-                I have many of my services ready for you to use!
-            </p>
-            <ul>
-                <li>If you have a part that needs to be replicated, I can directly model that part with precision and reproduce it.</li>
-                <li>If you have a broken part that needs to be fixed, I can attempt to repair it digitally (remodel) and remake it.</li>
-                <li>If you have a project startup idea, I can assist with CAD and Manufacturing to get your ideas rolling.</li>
-                <li>And many others!</li>
-            </ul>
-            <p>If you have any questions or if you need more information, feel free to <a class="hyperlink" href="contact.html"><b>Reach Out</b></a></p>
-        </div>
-
         <div class="whyus">
             <h2>Why Choose Me?</h2>
             <p>
@@ -52,7 +36,7 @@
                 <li>Fast response time and customer service</li>
                 <li>For more information, be sure to take a look at my <a class="hyperlink" href="pastwork.html"><b>Past Work Section</b></a></li>
             </ul>
-            <p><b>Your contributions toward this buisness will directly fuel my projects and knowledge toward engineering and inspiration.</b></p>
+            <p><b>Your contributions toward this buisness will directly fuel my projects and knowledge toward engineering and inspiration. All proceeds also help me go to college and other learning opportunities.</b></p>
         </div>
 
         <div class="about">
@@ -61,6 +45,70 @@
                 Stormcloud Designs is a small business located out of <b>New Boston, MI</b>.
                 Currently Stormcloud Designs is ran by only one person, but I am looking to grow.
                 I hope my services are useful towards your needs and what you are looking for.
+            </p>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="services">
+        <div>
+            <h2>Services</h2>
+            <p>
+                <ul>
+                    <li>Model-To-Print</li>
+                    <p>
+                        If you have the model file and want to have it printed, I can do that!
+                    </p>
+                    <li>Part Recreation</li>
+                    <p>
+                        If you have a part that needs to be replicated and printed new, I can do that! Broken parts (broken tabs, stripped out hole, etc) can be recreated as best as possible.
+                    </p>
+                    <li>CAD Service</li>
+                    <p>
+                        If, for any reason, you need somebody that has good parametric modeling knowledge, I have great experience and can help you with anything.
+                    </p>
+                    <li>Anything else!</li>
+                    <p>
+                        If you need something, feel free to <a class="hyperlink" href="contact.html"><b>Contact Me</b></a> and I might be able to help! 
+                    </p>
+                </ul>
+            </p>
+        </div>
+
+        <img src="images/h2c.jpg" alt="h2c">
+    </div>
+
+    <hr>
+
+    <div class="filament">
+        <img src="images/filament.jpg" alt="filament">
+
+        <div>
+            <h2>Filament</h2>
+            <p>
+                <ul>
+                    <li>PLA ($20/kg)</li>
+                    <p>
+                        Very popular filament. It is very stiff and works great for most parts. It cannot withstand heat, enviromental conditions, and is not very durable. Exellent print quality/finish.
+                    </p>
+                    <li>PETG ($25/kg)</li>
+                    <p>
+                        Nice middle-ground filament. It can withstand more heat than PLA. Pretty stiff but will flex instead of fracturing under load, increasing durability. Good print quality/finish
+                    </p>
+                    <li>ABS ($25/kg)</li>
+                    <p>
+                        High-tempature engineering filament. It is great for outdoor and enviromental conditions. Good print quality/finish.
+                    </p>
+                    <li>TPU ($35/kg)</li>
+                    <p>
+                        Flexible rubber-like filament. Good for joints or any other rubber application. Okay print quality/finish.
+                    </p>
+                    <li>PA6-CF ($50/kg)</li>
+                    <p>
+                        Extreme engineering grade filament. Very stiff and durable. Due to the state that this filament needs to be printed in, poor print quality and tolarances is expected.
+                    </p>
+                </ul>
             </p>
         </div>
     </div>
